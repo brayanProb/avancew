@@ -1,0 +1,48 @@
+.todo{padding: 2%;display: grid;grid-template-columns: repeat(auto-fill,31%);gap:2%;background-color: rgb(255, 255, 255,0.3);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.1);}
+.paralelo{display: grid;grid-template-columns: 55%45%;}
+.imagen{position: relative;}
+.imagen img{width: 100%;object-fit: cover;}
+.precio{position: absolute;bottom: 0%;z-index: 1;width: 100%;opacity: 95%;text-align: center;background-color: yellow;}
+.precioA{background-color: rgb(255, 0, 0);color: white;padding: 4%;border-bottom-right-radius: 10%;border-bottom-left-radius: 100%;font-weight: 600;}
+.precioB{background-color: rgb(255, 255, 7);padding: 4%;color: rgb(209, 138, 138);font-weight: 600;}
+/***/
+.caja{width: 100%;position: relative;}
+.cajaA{
+    position: absolute;
+    bottom: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.8); /* Cambiar el último valor para ajustar la transparencia */
+    width: 100%;
+    z-index: -1;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.1);
+border-radius: 1%;}
+/*
+.ver{width: 100%;text-align: center;padding: 5%;color: white;font-size: 0.8rem;top: 0%;height: 20%;background-color: rgb(255, 255, 255,0.9);
+    color: black;display: flex;align-items: center;justify-content: center;z-index: 2;
+    }*/
+.ver {width: 100%;text-align: center;padding: 5%;color: white;font-size: 0.8rem;top: 0%;height: 20%;background-color: rgba(255, 255, 255, 0.9);
+color: black;display: flex;align-items: center;justify-content: center;z-index: 2;position: relative;cursor: pointer;border-radius: 10px;
+transition: background-color 0.3s ease;}
+.ver:hover {background-color: rgba(255, 255, 255, 0.7);}
+.ver_link {text-decoration: none;color: inherit;display: flex;align-items: center;}
+.ver_link ion-icon {margin-left: 5px;}
+
+.cajaBitel{height: 80%;background-color: rgba(255, 242, 53, 0.5);}
+.logoBitel{position: absolute;border-radius: 50%;bottom: 5%;right: 2%;padding: 5%;font-size: 0.6rem;z-index: 1;}
+.logoBitel::before{
+    content: " ";
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 85%;
+    background-color: rgba(255, 255, 0, 0.8); /* Cambiar el último valor para ajustar la transparencia */
+    width: 100%;
+    z-index: -1;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.datos{background-color: white;width: 100%;z-index: -1;height: 100%;width: 90%;margin-left: 5%;border-radius: 5%;border: solid 2px black;}
+.datos nav{text-align: center;font-weight: 600;font-size: 1rem;}
+.datos p{font-weight: 600;font-size: 0.9rem;margin-bottom: 0%;margin: 4%;}
+.datos p strong{font-weight: 400;font-size: 0.8rem;}
